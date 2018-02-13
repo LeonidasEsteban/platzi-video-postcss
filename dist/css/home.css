@@ -78,6 +78,12 @@ body {
 .logo {
   width: calc(100% - 100px);
   margin: 0 auto;
+  /*background-image: image-set(url de la imagen densidad, url de la imagen densidad);*/
+  background-image: url('../../src/images/platzi-video.png');
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .logo-image {
   margin: 0;
@@ -303,4 +309,16 @@ body {
   body {
     border: 10px solid orange;
   }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+.logo {
+  background-image: url('../../src/images/platzi-video-2x.png');
+}
+}
+
+@media (-webkit-min-device-pixel-ratio: 3.125), (min-resolution: 300dpi) {
+.logo {
+  background-image: url('../../src/images/platzi-video-3x.png');
+}
 }
