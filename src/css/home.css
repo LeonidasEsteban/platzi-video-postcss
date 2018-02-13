@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', system-ui;
 }
 :root {
   --darkColor: #15192a;
@@ -67,7 +67,7 @@ body {
   /*background: hwb(0 - 360, 0 - 100%, 0 100%, opacidad)*/
   background: hwb(230, 8%, 82%, 1);
   /*background: gray(0 - 255);*/
-  background: gray(204);
+  /*background: gray(204);*/
 }
 
 /*Logo*/
