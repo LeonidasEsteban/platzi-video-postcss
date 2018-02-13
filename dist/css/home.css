@@ -273,3 +273,34 @@ body {
   font-size: 1.3em;
   margin: 10px;
 }
+
+/*@custom-media --small screen and (max-width: 768px);*/
+
+@media screen and (max-width: 767px) {
+  body {
+    border: 10px solid blue;
+  }
+  .home {
+    height: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto 150px;
+        grid-template-rows: auto auto 150px;
+        grid-template-areas: "primary"
+                         "sidebar"
+                         "featuring";
+  }
+  .featuring {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 479px) {
+  body {
+    border: 10px solid orange;
+  }
+}
