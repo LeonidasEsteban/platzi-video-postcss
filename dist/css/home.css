@@ -6,6 +6,7 @@ body {
   --darkColor: #15192a;
   --lightColor: white;
   --warningColor: red;
+  --viewportHeight: 50vh;
 }
 
 .btn {
@@ -29,7 +30,8 @@ body {
   background: var(--lightColor);
   display: -ms-grid;
   display: grid;
-  height: 100vh;
+  /*height: calc(var(--viewportHeight) * 2);*/
+  height: calc(50vh * 2);
   -ms-grid-columns: 350px 1fr;
       grid-template-columns: 350px 1fr;
   -ms-grid-rows: 1fr 150px;
@@ -74,7 +76,8 @@ body {
 
 /*Logo*/
 .logo {
-
+  width: calc(100% - 100px);
+  margin: 0 auto;
 }
 .logo-image {
   margin: 0;

@@ -10,6 +10,7 @@ module.exports = {
           flexbox: false,
         },
         customProperties: false,
+        calc: false,
       }
     })
   ]
