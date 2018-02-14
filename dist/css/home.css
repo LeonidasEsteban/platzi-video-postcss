@@ -300,11 +300,6 @@ body {
 .primaryPlaylist-list .primaryPlaylistItem {
   margin-right: 10px;
 }
-.primaryPlaylistItem {
-  /*border: 1px solid blue;*/
-}
-.primaryPlaylistItem-image {
-}
 .primaryPlaylistItem img {
   width: 250px;
   height: 180px;
@@ -338,8 +333,6 @@ body {
   background-image: url('../../src/images/platzi-video-3x.png');
 }
 }
-
-
 
 
 
