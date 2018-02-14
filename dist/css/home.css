@@ -23,15 +23,6 @@ body {
   padding-left: 100px;
   color: white;
 }
-@media screen and (max-width: 767px) {
-  .featuring {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
-  }
-}
 .featuring-image {
   margin-right: 20px;
 }
@@ -56,18 +47,6 @@ body {
       grid-template-areas: "sidebar primary"
                        "sidebar featuring";
   /*background: green;*/
-}
-@media screen and (max-width: 767px) {
-  .home {
-    height: auto;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: auto auto 150px;
-        grid-template-rows: auto auto 150px;
-        grid-template-areas: "primary"
-                         "sidebar"
-                         "featuring";
-  }
 }
 .home-sidebar {
   -ms-grid-row: 1;
@@ -322,6 +301,25 @@ body {
 /*@custom-selector :--nombreDelSelector .elemento > .hijo, .elemento2 > .hijo;*/
 .sidebarPlaylist {
   overflow: auto;
+}
+@media screen and (max-width: 767px) {
+  .featuring {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+  }
+  .home {
+    height: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto 150px;
+        grid-template-rows: auto auto 150px;
+        grid-template-areas: "primary"
+                         "sidebar"
+                         "featuring";
+  }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 .logo {
