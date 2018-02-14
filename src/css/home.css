@@ -125,6 +125,11 @@ body {
   padding: 0 20px;
 }
 
+.myPlaylist :any-link:hover {
+  color: color(peru l(80%) s(50%));
+  transform: scale(1.1);
+}
+
 .myPlaylist-item a {
   color: white;
   text-decoration: none;
@@ -141,6 +146,12 @@ body {
   text-decoration: underline;
 }
 
+.myPlaylist-item:matches(:last-child, :nth-of-type(3), :first-child) {
+  background: color(red l(70%));
+}
+.myPlaylist-item:not(:last-child, :nth-of-type(3)) {
+  background: color(blue l(80%));
+}
 /*playlistFriends*/
 
 .playlistFriends {
