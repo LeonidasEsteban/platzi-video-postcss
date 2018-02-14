@@ -66,6 +66,14 @@ body {
   grid-template-areas: "sidebar primary"
                        "sidebar featuring";
   /*background: green;*/
+  @media (--small) {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 150px;
+    grid-template-areas: "primary"
+                         "sidebar"
+                         "featuring";
+  }
 }
 
 .home-sidebar {
@@ -130,21 +138,30 @@ body {
   transform: scale(1.1);
 }
 
-.myPlaylist-item a {
-  color: white;
-  text-decoration: none;
-  font-size: .8em;
-  display: block;
-  margin-bottom: 7px;
-}
-.myPlaylist-item:last-child a {
-  margin-bottom: 0;
+.myPlaylist-item {
+  & a {
+    color: white;
+    text-decoration: none;
+    font-size: .8em;
+    display: block;
+    margin-bottom: 7px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &:last-child a {
+    margin-bottom: 0;
+  }
+  @nest .myPlaylist & {
+    border: 5px dashed pink;
+  }
 }
 
-
-.myPlaylist-item a:hover {
-  text-decoration: underline;
+/*.myPlaylist .myPlaylist-item {
 }
+*/
+
+
 
 .myPlaylist-item:matches(:last-child, :nth-of-type(3), :first-child) {
   background: color(red l(70%));
@@ -286,6 +303,13 @@ body {
   align-items: center;
   padding-left: 100px;
   color: white;
+  @media (--small) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+  }
 }
 
 .featuring-image {
@@ -306,29 +330,16 @@ body {
 @custom-media --medium screen and (width >= 768px);
 @custom-media --large screen and (width >= 1024px);
 
-@media (--small) {
+/*@media (--small) {
   body {
     border: 10px solid blue;
   }
-  .home {
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 150px;
-    grid-template-areas: "primary"
-                         "sidebar"
-                         "featuring";
-  }
-  .featuring {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
-  }
+
+
 }
 
 @media (--extra-small) {
   body {
     border: 10px solid orange;
   }
-}
+}*/
