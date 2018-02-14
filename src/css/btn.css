@@ -1,0 +1,7 @@
+.btn {
+  @apply --button;
+}
+
+.btn.warning {
+  background: var(--warningColor);
+}

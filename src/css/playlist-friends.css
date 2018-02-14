@@ -1,0 +1,37 @@
+
+
+/*playlistFriends*/
+
+.playlistFriends {
+  padding: 0;
+}
+
+.playlistFriends-item {
+  color: white;
+}
+
+.playlistFriends-item {
+  display: flex;
+  margin-bottom: 7px;
+  font-size: .8em;
+}
+.playlistFriends-item a {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+.playlistFriends-item:hover a {
+  text-decoration: underline;
+}
+
+.playlistFriends-item img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.playlistFriends-item span {
+  display: inline-block;
+}

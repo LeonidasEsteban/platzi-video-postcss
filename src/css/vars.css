@@ -1,0 +1,28 @@
+:root {
+  --darkColor: #15192a;
+  --lightColor: white;
+  --warningColor: red;
+  --button: {
+    border: 1px solid var(--lightColor);
+    border-radius: 5px;
+    background: var(--darckColor);
+    color: var(--lightColor);
+    padding: .5em 2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 5px solid var(--lightColor)
+  };
+  --viewportHeight: 50vh;
+}
+
+
+/*@custom-media --small screen and (max-width: 768px);*/
+@custom-media --extra-small (width < 480px);
+@custom-media --small screen and (width < 768px);
+@custom-media --medium screen and (width >= 768px);
+@custom-media --large screen and (width >= 1024px);
+
+/*@custom-selector :--nombreDelSelector .elemento > .hijo, .elemento2 > .hijo;*/
+@custom-selector :--checkeable .checkbox-label, .radio-label;
+@custom-selector :--hightlight :hover, :active;

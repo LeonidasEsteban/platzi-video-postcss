@@ -1,0 +1,9 @@
+.primary-user {
+  justify-self: end;
+}
+
+
+.primary-list {
+  grid-area: list;
+  overflow: auto;
+}

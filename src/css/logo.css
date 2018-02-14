@@ -1,0 +1,17 @@
+/*Logo*/
+.logo {
+  width: calc(100% - 100px);
+  margin: 0 auto;
+  /*background-image: image-set(url de la imagen densidad, url de la imagen densidad);*/
+  background-image: image-set(url('../../src/images/platzi-video.png') 1x, url('../../src/images/platzi-video-2x.png') 2x, url('../../src/images/platzi-video-3x.png') 300dpi);
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo-image {
+  margin: 0;
+}
+.logo-image img {
+  max-width: 100%;
+}
